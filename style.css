@@ -28,6 +28,9 @@ body {
    min-width: 20px;
    min-height: 20px;
 }
+.num2 {
+   margin-bottom: 20px;
+}
 
 .symbol-math {
    display: inline-block;
@@ -54,4 +57,5 @@ body {
 
 .answer {
    margin-bottom: 30px;
+   font-size: 30px;
 }
