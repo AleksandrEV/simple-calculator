@@ -56,6 +56,9 @@ body {
 }
 
 .answer {
-   margin-bottom: 30px;
+   margin-bottom: 15px;
    font-size: 30px;
+}
+.btn-return {
+   margin-bottom: 30px;
 }
