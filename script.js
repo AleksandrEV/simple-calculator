@@ -6,16 +6,17 @@ result.addEventListener('click', function () {
    let firstNum = document.getElementById('firstNum');
    let secondNum = document.getElementById('secondNum');
 
-   if (checkedBtn = '+') {
-      answer.textContent = (Number(firstNum)) + (Number(secondNum));
-      console.log(answer);
-   }
-
-   //answer.textContent = Number(firstNum.value) + (checkedBtn.value) + Number(secondNum.value);
-   //let answer1 = answer.textContent;
-   
-   
+   if (checkedBtn.value === '+') {
+      answer.textContent = Number(firstNum.value) + Number(secondNum.value);
+   };
+   if (checkedBtn.value === '-') {
+      answer.textContent = Number(firstNum.value) - Number(secondNum.value);
+   };
+   if (checkedBtn.value === '*') {
+      answer.textContent = Number(firstNum.value) * Number(secondNum.value);
+   };
+   if (checkedBtn.value === '/') {
+      answer.textContent = Number(firstNum.value) / Number(secondNum.value);
+   };
 
 });
-//console.log(result);
-//console.log(answer);
