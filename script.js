@@ -1,7 +1,8 @@
 let result = document.getElementById('result');
+let btnBack = document.getElementById('btn-back')
 let answer = document.querySelector('.answer');
-let save = [];
-console.log(save)
+let save0 = [];
+//console.log(save0);
 
 result.addEventListener('click', function () {
    let checkedBtn = document.querySelector('.radio-btn:checked');
@@ -11,7 +12,10 @@ result.addEventListener('click', function () {
    let secondNum = secondInput.value;
    let checkBtnFormassiv = checkedBtn.value;
 
-   save.push (
+
+   let save1 = [firstNum, secondNum, checkBtnFormassiv, answer];
+
+   save0.push (
       {firstNum, secondNum, checkBtnFormassiv, answer},
    );
 
@@ -28,5 +32,12 @@ result.addEventListener('click', function () {
       answer.textContent = Number(firstNum) / Number(secondNum);
    };
 
-   console.log(save);
+   console.log(save0);
 });
+
+
+   btnBack.addEventListener('click', function () {
+      save0.reverse();
+      console.log(save0);
+      save1 = save0[0];
+   })
