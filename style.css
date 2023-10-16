@@ -56,9 +56,9 @@ body {
 }
 
 .answer {
-   margin-bottom: 15px;
+   margin-bottom: 10px;
    font-size: 30px;
 }
-.btn-return {
+.back-and-forth {
    margin-bottom: 30px;
 }
